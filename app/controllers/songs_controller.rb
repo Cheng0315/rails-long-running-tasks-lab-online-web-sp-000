@@ -29,7 +29,7 @@ class SongsController < ApplicationController
       artist = Artist.create(name: song[1])
       artist.songs << song
     end
-    redirect_to customers_path
+    redirect_to songs_path
   end
 
   def edit
